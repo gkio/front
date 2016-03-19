@@ -1,6 +1,0 @@
-$variable: 10;
-
-body{
-	position: absolute $variable auto;
-	top:center;
-}

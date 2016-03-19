@@ -2,13 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>{% block title %}My Site{% endblock %}</title>
+  <title>{% block title %}{# ADD TITLE #}{% endblock %}</title>
 
   {% block head %}
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="../min-css/main.css">
   {% endblock %}
 </head>
 <body>
-  {% block content %}{% endblock %}
+  {% block content %}
+  {% endblock %}
 </body>
 </html>
