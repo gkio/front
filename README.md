@@ -6,7 +6,11 @@ Inside include
   - postcss
   - scss
 
-# AFTER CLONE 
---- you must to have installed *gulp globaly*
-- npm i
-- gulp (to run)
+# HOW TO INSTALL
+```sh
+$ git clone https://github.com/gkio/front.git
+$ cd front
+$ npm install
+$ sudo npm install -g gulp
+$ gulp
+```
