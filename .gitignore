@@ -5,3 +5,6 @@ logs
 npm-debug.log*
 node_modules
 compiled
+*.css
+*.swig
+*.html
