@@ -16,7 +16,12 @@ gulp.task('css', function () {
     return gulp.src('postcss/*.css')
     	.pipe(postcss(processors))
         .pipe( sourcemaps.init() )
-        // .pipe(postcss([require('')]))
+        .pipe(postcss([ require('postcss-animation'),
+        				require('postcss-color-gray'),
+        				require('precss'),
+        				require('postcss-responsive-images'),
+        				require('postcss-input-style'),
+        				 ]))
         .pipe( sourcemaps.write('.') )
         .pipe( gulp.dest('compiled/css/') )
    
@@ -24,7 +29,7 @@ gulp.task('css', function () {
 
 gulp.task('watch',function(){
 	
-	gulp.watch('work/postcss/*.css',['css'])
+	gulp.watch('postcss/*.css',['css'])
 })
 
 gulp.task('default',['css','watch'])

@@ -6,3 +6,8 @@ Inside include
   - postcss
   - jade
   - scss
+
+# AFTER CLONE
+
+- npm i
+- gulp (to run)
