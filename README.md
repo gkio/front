@@ -4,7 +4,6 @@ Inside include
 
   - swig
   - postcss
-  - jade
   - scss
 
 # AFTER CLONE 

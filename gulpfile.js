@@ -2,6 +2,14 @@ var gulp    = require('gulp')
 var postcss = require('gulp-postcss');
 var watch   = require('gulp-watch')
 var cssnext = require('postcss-cssnext')
+var swig = require('gulp-swig')
+
+
+gulp.task('swig', function() {
+  gulp.src('./magicGoesHere/swig/*.html')
+    .pipe(swig())
+    .pipe(gulp.dest('./compiled/html/'))
+});
 
 gulp.task('css', function () {
 
@@ -13,7 +21,7 @@ gulp.task('css', function () {
 			}),
 	]
 
-    return gulp.src('postcss/*.css')
+    return gulp.src('./magicGoesHere/postcss/*.css')
     	.pipe(postcss(processors))
         .pipe(postcss([ require('postcss-animation'),
         				require('postcss-color-gray'),
@@ -30,7 +38,8 @@ gulp.task('css', function () {
 
 gulp.task('watch',function(){
 	
-	gulp.watch('postcss/*.css',['css'])
+    gulp.watch('magicGoesHere/postcss/*.css',['css'])
+	gulp.watch('magicGoesHere/swig/*.swig',['swig'])
 })
 
-gulp.task('default',['css','watch'])
+gulp.task('default',['css','swig','watch'])
