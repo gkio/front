@@ -1,0 +1,21 @@
+$vari: #fff;
+$num : 12;
+body{
+	background-color: $vari;
+	color: gray(255);
+	display: flex;
+	animation-name: fadeOut;
+	top:center;
+}
+.thiss img{
+	image-size:responsive;
+}
+h1{
+	font-size: responsive;
+}
+.box{
+	position: absolute 10 auto;
+	&_index{
+		position: absolute $num auto;
+	}
+}

@@ -1,0 +1,56 @@
+body{
+	background-color: #fff;
+	color: rgb(255, 255, 255);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-animation-name: fadeOut;
+	        animation-name: fadeOut;
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+}
+@-webkit-keyframes fadeOut{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+@keyframes fadeOut{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+.thiss img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+h1{
+	font-size: calc(12px + 9 * ((100vw - 420px) / 860));
+}
+@media screen and (min-width: 1280px){
+	h1{
+		font-size: 21px;
+	}
+}
+@media screen and (max-width: 420px){
+	h1{
+		font-size: 12px;
+	}
+}
+.box{
+	position: absolute;
+	top: 10;
+	right: auto;
+	bottom: 10;
+	left: auto
+}
+.box_index{position: absolute;top: 12;right: auto;bottom: 12;left: auto;
+}

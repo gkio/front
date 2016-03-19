@@ -1,7 +1,7 @@
 var gulp    = require('gulp')
 var postcss = require('gulp-postcss');
 var watch   = require('gulp-watch')
- 
+var cssnext = require('postcss-cssnext')
 
 gulp.task('css', function () {
 
@@ -15,14 +15,15 @@ gulp.task('css', function () {
 
     return gulp.src('postcss/*.css')
     	.pipe(postcss(processors))
-        .pipe( sourcemaps.init() )
         .pipe(postcss([ require('postcss-animation'),
         				require('postcss-color-gray'),
-        				require('precss'),
+        				require('autoprefixer'),
+                        require('precss'),
+                        require('rucksack-css'),
+        				require('postcss-center'),
         				require('postcss-responsive-images'),
         				require('postcss-input-style'),
-        				 ]))
-        .pipe( sourcemaps.write('.') )
+        				 ]))        
         .pipe( gulp.dest('compiled/css/') )
    
 });

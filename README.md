@@ -7,7 +7,7 @@ Inside include
   - jade
   - scss
 
-# AFTER CLONE
-
+# AFTER CLONE 
+--- you must to have installed *gulp globaly*
 - npm i
 - gulp (to run)
