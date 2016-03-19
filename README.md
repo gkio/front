@@ -6,3 +6,4 @@ Inside include
   - postcss
   - jade
   - scss
+  - pupu

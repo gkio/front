@@ -1,0 +1,21 @@
+{
+  "name": "front-project",
+  "version": "1.0.0",
+  "description": "front end gkio's project",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkio/front-project.git"
+  },
+  "author": "GkioRa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gkio/front-project/issues"
+  },
+  "homepage": "https://github.com/gkio/front-project#readme"
+}
